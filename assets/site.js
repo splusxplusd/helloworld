@@ -529,6 +529,23 @@
     sc.fit(20);
   }
 
+  // Week card: flip the Flipdot ticks to "done" one by one the first time the card is seen.
+  function initWeekTicks() {
+    var ticks = document.querySelectorAll('.week .tick');
+    if (!ticks.length || reduceMotion || !('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function (entries) {
+      if (!entries[0].isIntersecting) return;
+      io.disconnect();
+      customElements.whenDefined('tiny-tell').then(function () {
+        ticks.forEach(function (t, n) {
+          t.state = 'working';
+          setTimeout(function () { t.state = 'done'; }, 600 + n * 350);
+        });
+      });
+    }, { threshold: 0.4 });
+    io.observe(ticks[0].closest('.week'));
+  }
+
   function initProblemTabs() {
     var card = document.getElementById('ps');
     if (!card) return;
@@ -658,6 +675,7 @@
   drawScatter();
   drawSolution();
   initProblemTabs();
+  initWeekTicks();
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(initLeaves); else initLeaves();
   if (flags.factory) initFactory(); else initFlow();
   var resizeTimer = null;

@@ -177,8 +177,8 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .week ul { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.9rem 1.5rem; }
 @media (max-width: 600px) { .week ul { grid-template-columns: minmax(0, 1fr); } }
 .week li { display: grid; grid-template-columns: 1.5rem minmax(0, 1fr); gap: 0.6rem; align-items: start; font-size: 0.95rem; }
-.tick { width: 1.5rem; height: 1.5rem; border-radius: 50%; background: var(--done); display: grid; place-items: center; }
-.tick svg { width: 0.85rem; height: 0.85rem; }
+.tick { --tell-size: 24px; --tell-color-done: var(--done); --tell-color-working: var(--blue); }
+.tick:not(:defined) { display: inline-block; width: 24px; height: 24px; border-radius: 6px; background: color-mix(in srgb, var(--done) 25%, transparent); }
 .week li s { color: var(--muted); }
 .week li small { display: block; color: var(--ink); font-size: 0.85rem; }
 
