@@ -554,6 +554,11 @@
         t.state = 'working';
         setTimeout(function () { t.state = target; }, 700 + n * 220);
       });
+      var ico = tabs[i].querySelector('tiny-tell');
+      if (ico && !reduceMotion && ico.matches(':defined')) {
+        ico.state = 'working';
+        setTimeout(function () { ico.state = i === 0 ? 'error' : 'done'; }, 500);
+      }
       if (fromUser) { auto = false; clearTimeout(timer); tabs.forEach(function (t) { t.querySelector('.ps-bar').classList.remove('run'); }); }
       else schedule();
     }
