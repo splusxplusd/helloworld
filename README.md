@@ -26,3 +26,5 @@ Preview locally by opening `index.html` in a browser, or run `python3 -m http.se
 - A working `hello@doneanddone.co` mailbox
 - Final logo (the mark is an SVG redraw of the concept)
 - Replace the starter blog posts
+
+See [DESIGN.md](DESIGN.md) for the logo, colours, type, components, motion and speed budget.
