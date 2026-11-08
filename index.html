@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Done &amp; Done</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Done & Done replaces the pile of business apps with one system for sales, accounting, inventory, projects and more, set up for Canada, and moves your data in for you.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:opsz,wght@9..40,400..700&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="site-header" id="site-header">
+  <div class="nav-shell">
+    <a class="brand" href="#top" aria-label="Done &amp; Done, home">
+      <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+        <defs><linearGradient id="dd-grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2E8BFF"/><stop offset="1" stop-color="#0F55D6"/></linearGradient></defs>
+        <path class="mark-outer" d="M24 9 H50 A41 41 0 0 1 50 91 H24 Q11 91 11 78 V22 Q11 9 24 9 Z" fill="none" stroke="url(#dd-grad)" stroke-width="10" stroke-linejoin="round"/>
+        <path class="mark-inner" d="M37 30 H50 A20 20 0 0 1 50 70 H37 Z" fill="none" stroke="url(#dd-grad)" stroke-width="9" stroke-linejoin="round"/>
+      </svg>
+      <span class="wordmark">Done &amp; Done</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <div class="menu" id="about-menu-wrap">
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="about-menu">About
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg>
+        </button>
+        <ul class="menu-list" id="about-menu">
+          <li><a href="blog/why-we-are-building-done-and-done.html">Our story<small>Why we started Done &amp; Done</small></a></li>
+          <li><a href="#apps">What it replaces<small>The apps in one system</small></a></li>
+          <li><a href="#how">How we work<small>From sign-up to running it all</small></a></li>
+          <li><a href="#canada">Built for Canada<small>Taxes, languages, hosting</small></a></li>
+        </ul>
+      </div>
+      <a href="#flow-anchor">How it works</a>
+      <a href="#blog">Blog</a>
+      <a href="#pilot">Contact</a>
+      <a class="btn btn-primary" href="#pilot">Join the pilot</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" id="hero">
+    <div class="tiles" id="tiles" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <h1>Your whole back office in one place. <em class="leaf-wrap" id="leaf-wrap">Set up for Canada.</em></h1>
+      <p class="lede">Sales, invoicing, accounting, inventory, purchasing, projects and more, in one system that already knows GST, HST, QST and PST. Our team moves your data in from the tools you use today.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#pilot">Join the pilot</a>
+        <a class="btn btn-ghost" href="#flow-anchor">See an order go through</a>
+      </div>
+
+      <aside class="week" aria-label="Example of a month-end with Done &amp; Done">
+        <div class="week-head">
+          <span class="pill">Month-end, Friday</span>
+          <h2>An example week for a 20-person distributor</h2>
+        </div>
+        <ul>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span><span><s>Re-type orders into three apps</s><small>Orders post to the books on their own</small></span></li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span><span><s>Check the stock spreadsheet</s><small>Stock moved when the order shipped</small></span></li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span><span><s>Work out HST by province</s><small>Tax was right on every invoice</small></span></li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span><span><s>Chase receipts for the accountant</s><small>Your accountant logs in and sees it all</small></span></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" id="problem" style="padding-top:0">
+    <div class="wrap">
+      <div class="dark-card ps" id="ps">
+        <div class="ps-tabs" role="tablist" aria-label="The problem and the fix">
+          <button class="ps-tab" role="tab" id="tab-problem" aria-selected="true" aria-controls="ps-problem"><span class="ps-ico ps-x" aria-hidden="true"></span>The problem<span class="ps-bar"></span></button>
+          <button class="ps-tab" role="tab" id="tab-fix" aria-selected="false" aria-controls="ps-fix" tabindex="-1"><span class="ps-ico ps-check" aria-hidden="true"></span>The fix<span class="ps-bar"></span></button>
+        </div>
+
+        <div class="ps-panel" id="ps-problem" role="tabpanel" aria-labelledby="tab-problem">
+          <div>
+            <h2 class="h2">A 20-person business runs on five tools that don't talk to each other</h2>
+            <ul class="marks">
+              <li class="no"><tiny-tell tell="flipdot" state="error" scheme="dark" label=""></tiny-tell><span><b>The same order gets typed three times,</b> into sales, stock and the books.</span></li>
+              <li class="no"><tiny-tell tell="flipdot" state="error" scheme="dark" label=""></tiny-tell><span><b>Month-end takes days,</b> and the accountant chases receipts.</span></li>
+              <li class="no"><tiny-tell tell="flipdot" state="error" scheme="dark" label=""></tiny-tell><span><b>Nobody has a clear view</b> of cash, margin or stock without a spreadsheet.</span></li>
+            </ul>
+            <div class="stat-line">
+              <span class="num">1 in 10</span>
+              <p>Canadian small businesses have fully connected their digital tools, though almost all use some.<small>CFIB digital adoption report, via Lexpert, 1 October 2025</small></p>
+            </div>
+          </div>
+          <div class="scatter" aria-hidden="true"><svg id="scatter-svg"></svg></div>
+        </div>
+
+        <div class="ps-panel" id="ps-fix" role="tabpanel" aria-labelledby="tab-fix" hidden>
+          <div>
+            <h2 class="h2">One system where everything is connected, and done</h2>
+            <ul class="marks">
+              <li class="yes"><tiny-tell tell="flipdot" state="done" scheme="dark" label=""></tiny-tell><span><b>Type an order once,</b> and sales, stock and the books update on their own.</span></li>
+              <li class="yes"><tiny-tell tell="flipdot" state="done" scheme="dark" label=""></tiny-tell><span><b>Month-end is a check, not a project.</b> Your accountant logs in and finds everything.</span></li>
+              <li class="yes"><tiny-tell tell="flipdot" state="done" scheme="dark" label=""></tiny-tell><span><b>Cash, margin and stock</b> are on one screen, up to date.</span></li>
+              <li class="yes"><tiny-tell tell="flipdot" state="done" scheme="dark" label=""></tiny-tell><span><b>Set up for Canada,</b> and our team moves your data in for you.</span></li>
+            </ul>
+          </div>
+          <div class="scatter" aria-hidden="true"><svg id="solution-svg"></svg></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="apps">
+    <div class="wrap">
+      <div class="apps-head">
+        <div>
+          <p class="eyebrow">One system</p>
+          <h2 class="h2" style="margin-top:0.75rem">Replace the pile of apps with one system</h2>
+        </div>
+        <p>Done &amp; Done runs on Odoo, open-source business software used by millions of people around the world. Every app shares the same customers, products and numbers, so a change in one shows up everywhere.</p>
+      </div>
+      <ul class="apps">
+        <li class="app"><h3>Sales &amp; CRM</h3><p>Leads, quotes, orders and follow-ups.</p><span class="instead">Instead of HubSpot, Pipedrive or a spreadsheet</span></li>
+        <li class="app"><h3>Invoicing &amp; accounting</h3><p>Invoices, bills, bank reconciliation and tax reports.</p><span class="instead">Instead of QuickBooks or Xero</span></li>
+        <li class="app"><h3>Inventory</h3><p>Stock levels, locations and reorder rules.</p><span class="instead">Instead of a stock spreadsheet or inventory app</span></li>
+        <li class="app"><h3>Purchasing</h3><p>Purchase orders, supplier bills and receiving.</p><span class="instead">Instead of email and spreadsheets</span></li>
+        <li class="app"><h3>Projects &amp; timesheets</h3><p>Tasks, hours and billing for time spent.</p><span class="instead">Instead of Asana, Trello or Harvest</span></li>
+        <li class="app"><h3>Expenses</h3><p>Receipts, approvals and reimbursements.</p><span class="instead">Instead of Expensify or a shoebox</span></li>
+        <li class="app"><h3>Employees &amp; time off</h3><p>Staff directory, leave requests and approvals.</p><span class="instead">Instead of a shared calendar</span></li>
+        <li class="app app-more"><h3>Add as you grow</h3><p>Website and online store, point of sale, email marketing, manufacturing, events and surveys.</p><span class="instead">Same system, same data</span></li>
+      </ul>
+      <p class="connect"><b>Connect, don't replace:</b> where a separate tool makes more sense, such as your payroll provider, your bank or your Shopify store, we connect it instead.</p>
+    </div>
+  </section>
+
+  <span id="flow-anchor"></span>
+
+  <!-- Feature-flagged: shown only when DD_FLAGS.factory is on (see assets/flags.js). -->
+  <section class="section factory" id="factory" hidden aria-labelledby="factory-title">
+    <div class="wrap">
+      <div class="factory-intro">
+        <p class="eyebrow">One order, start to finish</p>
+        <h2 class="h2" id="factory-title">Type it once. Everything else follows.</h2>
+        <p class="lede">Follow one example order through a small business. Every team works from the same record, so nobody copies anything from one system to another.</p>
+      </div>
+      <div class="factory-grid">
+        <div class="factory-stage">
+          <svg id="factory-svg" class="iso" role="img" aria-label="Illustration of a small business as a factory floor: one order travels along a conveyor past sales, inventory, invoicing, accounting and reports."></svg>
+        </div>
+        <ol class="factory-steps" id="factory-steps">
+          <li class="fstep" data-station="0"><div class="fcard">
+            <span class="num">01 · Sales</span>
+            <h3>A customer says yes</h3>
+            <p>Your customer accepts a quote online, or your rep marks it won. That's the only time anyone types the order.</p>
+            <code>Quote Q-0142 · Northwind Supply, Ottawa · 40 cases × $38.50 = $1,540.00</code>
+          </div></li>
+          <li class="fstep" data-station="1"><div class="fcard">
+            <span class="num">02 · Inventory</span>
+            <h3>Stock is set aside</h3>
+            <p>The 40 cases are reserved the moment the quote is accepted. If you're running low, your buyer gets a reorder suggestion.</p>
+            <code>52 on hand → 40 reserved → 12 left · below reorder point of 20</code>
+          </div></li>
+          <li class="fstep" data-station="2"><div class="fcard">
+            <span class="num">03 · Invoicing</span>
+            <h3>The invoice goes out with the right tax</h3>
+            <p>GST, HST, QST or PST is picked from where the customer is. The invoice goes out in English or French, whichever they prefer.</p>
+            <code>Subtotal $1,540.00 · HST Ontario 13% $200.20 · Total $1,740.20</code>
+          </div></li>
+          <li class="fstep" data-station="3"><div class="fcard">
+            <span class="num">04 · Accounting</span>
+            <h3>The books update themselves</h3>
+            <p>Sales, receivables and HST payable are posted as it happens. Your accountant sees the same numbers you do.</p>
+            <code>Dr Receivables 1,740.20 · Cr Sales 1,540.00 · Cr HST payable 200.20</code>
+          </div></li>
+          <li class="fstep" data-station="4"><div class="fcard">
+            <span class="num">05 · Reports</span>
+            <h3>You see cash and margin today</h3>
+            <p>Margin on the order and your cash forecast are up to date, without anyone opening a spreadsheet.</p>
+            <code>Margin on this order $576.00 (37.4%) · cash forecast updated</code>
+          </div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shown while the factory flag is off. -->
+  <section class="section band-flow" id="flow" aria-labelledby="flow-title">
+    <div class="wrap">
+      <div class="flow-head">
+        <div style="display:flex;flex-direction:column;gap:1rem;max-width:40rem">
+          <p class="eyebrow">One order, start to finish</p>
+          <h2 class="h2" id="flow-title">Type it once. Everything else follows.</h2>
+          <p class="lede">Follow one example order through the business. Every team works from the same record, so nobody copies anything from one system to another.</p>
+        </div>
+        <div class="flow-controls">
+          <button type="button" id="flow-toggle" aria-pressed="false">Pause</button>
+          <button type="button" id="flow-restart">Restart</button>
+        </div>
+      </div>
+      <div class="machine" id="machine">
+        <div class="rail" id="rail"></div>
+        <div class="rail-fill" id="rail-fill"></div>
+        <ol class="stations">
+          <li class="station"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></span><div><h3>Sales</h3><p>The customer accepts a quote online.</p></div></li>
+          <li class="station"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></span><div><h3>Inventory</h3><p>Stock is reserved and a reorder is flagged.</p></div></li>
+          <li class="station"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg></span><div><h3>Invoicing</h3><p>The invoice goes out with the right tax.</p></div></li>
+          <li class="station"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16M4 12h16M4 19h16"/><path d="M12 5v14"/></svg></span><div><h3>Accounting</h3><p>The books update themselves.</p></div></li>
+          <li class="station"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><div><h3>Reports</h3><p>You see cash and margin right away.</p></div></li>
+        </ol>
+        <div class="flow-parcel" id="flow-parcel" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/></svg></div>
+      </div>
+      <div class="slip" aria-live="polite">
+        <p class="slip-title">Example order · Northwind Supply, Ottawa, ON</p>
+        <ol id="slip">
+          <li><b>Quote Q-0142</b><span>40 cases × $38.50 = $1,540.00 · accepted</span></li>
+          <li><b>Stock</b><span>52 on hand → 40 reserved → 12 left · reorder suggested</span></li>
+          <li><b>Invoice 0142</b><span>Subtotal $1,540.00 · HST Ontario 13% $200.20 · Total $1,740.20</span></li>
+          <li><b>Journal</b><span>Dr Receivables 1,740.20 · Cr Sales 1,540.00 · Cr HST payable 200.20</span></li>
+          <li><b>Report</b><span>Margin on this order $576.00 (37.4%) · cash forecast updated</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="how">
+    <div class="wrap">
+      <p class="eyebrow">How it works</p>
+      <h2 class="h2" style="margin-top:0.75rem;max-width:44rem">From sign-up to running your business, with a person helping at every step</h2>
+      <ol class="steps">
+        <li><h3>Sign up</h3><p>You get a working company, already set up for your province's taxes, in English or French.</p></li>
+        <li><h3>We move you</h3><p>Our team brings over your customers, products and full history from QuickBooks, spreadsheets and your other apps.</p></li>
+        <li><h3>Go live</h3><p>We run both systems side by side for a week, and switch over once balances match to the cent.</p></li>
+        <li><h3>Run it all</h3><p>Books, invoicing, sales, stock and projects in one place, with someone to call when you need help.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="pixel-edge" data-pixels="up" aria-hidden="true"></div>
+  <section class="canada" id="canada">
+    <div class="wrap">
+      <div class="canada-head">
+        <div>
+          <p class="eyebrow">Built for Canada</p>
+          <h2 class="h2" style="margin-top:0.75rem">Canadian details, done once for every customer</h2>
+        </div>
+        <p>Sales tax rules, both official languages and where your data lives are set up before you log in. You don't configure any of it.</p>
+      </div>
+      <div class="canada-cards">
+        <div class="ccard"><span class="big">13</span><h3>Provinces and territories</h3><p>GST, HST, QST and PST rules set up for every one of them.</p></div>
+        <div class="ccard"><span class="big">EN · FR</span><h3>Both official languages</h3><p>Invoices, menus and documents in English or French, per customer.</p></div>
+        <div class="ccard"><span class="big">100%</span><h3>Hosted in Canada</h3><p>Run by a Canadian-owned provider, with backups kept in Canada.</p></div>
+        <div class="ccard wide">
+          <div style="display:flex;flex-direction:column;gap:0.6rem">
+            <h3>The right tax on every invoice</h3>
+            <p>The tax follows where your customer is, so an order shipped to Quebec gets GST and QST, and one shipped to Ontario gets HST.</p>
+          </div>
+          <div>
+            <div class="tax-wrap">
+              <table class="tax">
+                <thead><tr><th>Province</th><th>Tax on a sale</th><th class="r">Rate</th></tr></thead>
+                <tbody>
+                  <tr><td>Ontario</td><td>HST</td><td class="r">13%</td></tr>
+                  <tr><td>Quebec</td><td>GST + QST</td><td class="r">5% + 9.975%</td></tr>
+                  <tr><td>British Columbia</td><td>GST + PST</td><td class="r">5% + 7%</td></tr>
+                  <tr><td>Alberta</td><td>GST</td><td class="r">5%</td></tr>
+                  <tr><td>Nova Scotia</td><td>HST</td><td class="r">14%</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="tax-note">General rates on goods, for illustration.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="pixel-edge flip" data-pixels="down" aria-hidden="true"></div>
+
+  <section class="section" id="fit">
+    <div class="wrap">
+      <p class="eyebrow">Who it's for</p>
+      <h2 class="h2" style="margin-top:0.75rem;max-width:44rem">Owner-led businesses juggling too many apps</h2>
+      <div class="fit-grid">
+        <div class="fit"><h3>Wholesale and distribution</h3><p>You buy, stock and ship products, and your stock count never quite matches the books.</p></div>
+        <div class="fit"><h3>Professional services</h3><p>You sell time and projects, and billing depends on someone copying timesheets into invoices.</p></div>
+        <div class="fit"><h3>Shopify sellers with stock</h3><p>You sell online and wholesale, and orders, stock and accounting live in different places.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq" style="padding-top:0">
+    <div class="wrap faq-grid">
+      <div class="faq-side">
+        <h2>Questions</h2>
+        <p>What business owners ask us most, from what it runs on to how we move your data.</p>
+        <a class="btn btn-dark" href="#pilot">Ask us something
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5"/></svg></a>
+      </div>
+      <div class="faq-list">
+        <details open><summary>Is this one more tool to learn?</summary><p>It's meant to replace several. Sales, stock, purchasing, projects, invoicing and the books live in one system, so you have fewer logins and fewer places where numbers can disagree. Where replacing a tool doesn't make sense, such as your payroll provider or your Shopify store, we connect to it.</p></details>
+        <details><summary>What software is it built on?</summary><p>Odoo Community, the open-source edition of Odoo, business software used by millions of people around the world. We host it, set it up for Canada, keep it updated and support it. Done &amp; Done is independent and not affiliated with Odoo S.A.</p></details>
+        <details><summary>How do you move my data in?</summary><p>Our team does it with you. We bring across customers, suppliers, products and your full transaction history from QuickBooks or Xero, contacts and deals from your CRM, and whatever lives in spreadsheets. We run old and new side by side for a week and switch over once the numbers match.</p></details>
+        <details><summary>Where is my data stored?</summary><p>In Canada, with a Canadian-owned hosting provider. Backups are kept in Canada too.</p></details>
+        <details><summary>Does this replace my accountant?</summary><p>No. Your accountant gets their own login, so they can see what they need without you sending files back and forth.</p></details>
+        <details><summary>What will it cost?</summary><p>We're setting prices with our pilot businesses, as a simple monthly plan per company in Canadian dollars with a few users included. Write to us and we'll share where we are.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="blog" style="padding-top:0">
+    <div class="wrap">
+      <div class="blog-head">
+        <h2>Notes from the workshop</h2>
+        <p>What we're learning as we build Done &amp; Done, written for business owners, without jargon.</p>
+      </div>
+      <div class="posts">
+        <a class="post-card" href="blog/why-we-are-building-done-and-done.html">
+          <div class="post-thumb" data-pixels="thumb" data-seed="7" aria-hidden="true"><span class="tag">Our story</span></div>
+          <time datetime="2026-11-08">8 November 2026</time>
+          <h3>Why we're building Done &amp; Done</h3>
+          <p>Small Canadian businesses run on tools that don't talk. Here's what we think the fix looks like.</p>
+        </a>
+        <a class="post-card" href="blog/moving-your-books-by-hand.html">
+          <div class="post-thumb" data-pixels="thumb" data-seed="23" aria-hidden="true"><span class="tag">How we work</span></div>
+          <time datetime="2026-11-08">8 November 2026</time>
+          <h3>Why we'll move your books by hand first</h3>
+          <p>Switching systems is the scary part. For our first customers, a person does it with you.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="pilot" style="padding-top:0">
+    <div class="wrap">
+      <div class="pilot">
+        <div>
+          <h2>Help us build it right</h2>
+          <p>We're talking with Canadian business owners before we launch. If you run a business of 5 to 50 people, we'd like 30 minutes to hear how your back office works today.</p>
+          <ul>
+            <li>No sales pitch, just questions about your week</li>
+            <li>Pilot businesses get a hands-on move from their current apps</li>
+            <li>Investors and advisors are welcome to write too</li>
+          </ul>
+        </div>
+        <div class="contact-card">
+          <span class="label">Write to us</span>
+          <div class="email-row">
+            <a class="email" id="email" href="mailto:hello@doneanddone.co">hello@doneanddone.co</a>
+            <button class="copy" type="button" id="copy-email">Copy</button>
+          </div>
+          <small id="copy-status" aria-live="polite">Tell us your business, your province and the tools you use today.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#top" aria-label="Done &amp; Done, home">
+          <svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><path d="M24 9 H50 A41 41 0 0 1 50 91 H24 Q11 91 11 78 V22 Q11 9 24 9 Z" fill="none" stroke="url(#dd-grad)" stroke-width="10"/><path d="M37 30 H50 A20 20 0 0 1 50 70 H37 Z" fill="none" stroke="url(#dd-grad)" stroke-width="9"/></svg>
+          <span class="wordmark">Done &amp; Done</span>
+        </a>
+        <p class="foot-blurb">Business software for Canadian small businesses, set up for Canada, with people who move you in.</p>
+      </div>
+      <div><h3>Product</h3><ul><li><a href="#apps">What it replaces</a></li><li><a href="#flow-anchor">How it works</a></li><li><a href="#canada">Built for Canada</a></li><li><a href="#fit">Who it's for</a></li><li><a href="#faq">Questions</a></li></ul></div>
+      <div><h3>Company</h3><ul><li><a href="blog/why-we-are-building-done-and-done.html">Our story</a></li><li><a href="#blog">Blog</a></li><li><a href="#pilot">Join the pilot</a></li></ul></div>
+      <div><h3>Contact</h3><ul><li>hello@doneanddone.co</li><li>Canada</li></ul></div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 Done &amp; Done. Made in Canada.</span>
+      <span>Odoo is a trademark of Odoo S.A. Done &amp; Done is not affiliated with Odoo S.A.</span>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/tiny-tells@0.5.0/dist/tiny-tells.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+<script src="assets/flags.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
