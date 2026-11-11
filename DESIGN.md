@@ -16,17 +16,20 @@ Taking inspiration from Stripe means copying its qualities: precision, generous 
 
 ## Logo
 
+Final mark (D, 11 Nov 2026): a **D cut by a check mark**. The light-blue top half and the indigo-to-navy bottom half are separated by a check-shaped gap, so the D itself says "done".
+
 | | |
 |---|---|
-| Mark | Rounded "D" made of two nested strokes, an outer D and an inner D, drawn in a blue gradient. File: [`brand/mark.svg`](brand/mark.svg). White version for dark or blue backgrounds: [`brand/mark-white.svg`](brand/mark-white.svg). |
-| Gradient | `#2E8BFF` → `#0F55D6`, top-left to bottom-right |
-| Wordmark | "Done & Done" in Bricolage Grotesque, weight 800, letter-spacing −0.02em, set beside the mark with a gap of 0.6× the wordmark size |
-| Favicon | `favicon.svg` (thicker strokes for small sizes), `favicon.ico` (16/32/48), `apple-touch-icon.png` (180, on white), `icon-512.png`. |
-| Minimum size | Mark 24 px; below that use the favicon artwork. |
-| Motion | In the header, the inner D turns and the outer D "breathes" on a 7-second loop, and speeds up on hover. The logo is never animated in print, in email or in favicons. |
+| Mark | [`brand/mark.svg`](brand/mark.svg) (full colour, transparent). [`brand/mark-white.svg`](brand/mark-white.svg) for dark or blue backgrounds (used in the footer). [`brand/mark-512.png`](brand/mark-512.png) for tools that need a bitmap. |
+| Top half | Gradient `#8FA4FB` → `#4A72F6`, top-left to centre |
+| Bottom half | Gradient `#3828C8` → `#3029B8` → `#16376A`, left to right |
+| The check | It is a gap, not a shape, so it always shows the background. Never fill it with a colour. |
+| Wordmark | "Done & Done" in Bricolage Grotesque 800, letter-spacing −0.02em, beside the mark. (Another thread is exploring a "Done" wordmark; not adopted yet.) |
+| Favicon | `favicon.svg`, `favicon.ico` (16/32/48), `apple-touch-icon.png` (180, on white), `icon-512.png`. |
+| Minimum size | 16 px tall. Keep clear space of at least a quarter of the mark's height. |
+| Motion | In the header the two halves part slightly along the check and close again every 7 s (faster on hover); off with reduced motion. |
 
 **Still open:**
-- Final logo. The current mark is an SVG redraw of D's concept, and a designer pass is likely.
 - Spelling: the site uses **"Done & Done"** and the pitch deck uses "Done&Done". We should pick one and use it everywhere.
 - Social share image (Open Graph) and a lock-up file with the mark and wordmark together.
 

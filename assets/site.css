@@ -102,16 +102,14 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .brand .mark { width: 38px; height: 38px; flex: none; overflow: visible; }
 .wordmark { font-family: var(--font-display); font-weight: 800; font-size: 1.3rem; letter-spacing: -0.02em; white-space: nowrap; transition: opacity .3s ease, width .3s ease; }
 .site-header.is-floating .wordmark { opacity: 0; width: 0; overflow: hidden; }
-.mark-inner { transform-box: fill-box; transform-origin: 40% 50%; animation: mark-spin 7s cubic-bezier(.6,0,.3,1) infinite; }
-.mark-outer { transform-box: fill-box; transform-origin: 50% 50%; animation: mark-breathe 7s ease-in-out infinite; }
-@keyframes mark-spin {
-  0%, 30% { transform: rotate(0deg) translateX(0); }
-  42% { transform: rotate(-14deg) translateX(-3%); }
-  56% { transform: rotate(10deg) translateX(3%); }
-  68%, 100% { transform: rotate(0deg) translateX(0); }
-}
-@keyframes mark-breathe { 0%, 30%, 68%, 100% { transform: scale(1); } 49% { transform: scale(0.96); } }
-.brand:hover .mark-inner { animation-duration: 2.2s; }
+.brand .mark { width: 32px; }
+.mark-top, .mark-bottom { transition: transform .35s cubic-bezier(.3,.7,.3,1); }
+.mark-top { animation: mark-top 7s cubic-bezier(.6,0,.3,1) infinite; }
+.mark-bottom { animation: mark-bottom 7s cubic-bezier(.6,0,.3,1) infinite; }
+@keyframes mark-top { 0%, 34%, 62%, 100% { transform: none; } 46% { transform: translate(-14px, -14px); } }
+@keyframes mark-bottom { 0%, 34%, 62%, 100% { transform: none; } 46% { transform: translate(10px, 10px); } }
+.brand:hover .mark-top, .brand:hover .mark-bottom { animation-duration: 2.2s; }
+@media (prefers-reduced-motion: reduce) { .mark-top, .mark-bottom { animation: none; } }
 
 .nav { display: flex; align-items: center; gap: 0.25rem; }
 .nav > a, .menu-btn {
